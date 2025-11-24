@@ -9,11 +9,11 @@ The goal was to increase efficiency while maintaining a high level of accuracy.
 ## Model/Hardware Specs:
 Pretrained ResNet-18 architecture with Adam optimizer. 
 The model leverages MXNet as the deep learning framework, and uses CUDA and GPU acceleration (specifically a Tesla K80 GPU).
-![Model Selection](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/ALGORITH_SELECTION.png)
+![Model Selection](images/ALGORITH_SELECTION.png)
 
 
 ## Hyperparameter Configuration (SageMaker):
-![Hyperparameter Configuration](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/HYPERPARAMETERS.png)
+![Hyperparameter Configuration](images/HYPERPARAMETERS.png)
 
 
 ## Methods
@@ -23,26 +23,26 @@ The blue colored channels were associated with the standard 1x zoom level (50x50
 Red channel was zoomed out by 24x.
 The green channel zoomed out by 8x. 
 
-![Color Channels](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/OTHER_THUMBNAILS.png)
+![Color Channels](images/OTHER_THUMBNAILS.png)
 
 
 These images were overlayed on top of each other for training data of the classification model: 
 
-![Channel Overlay](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/COLORED_THUMBNAIL.png)
+![Channel Overlay](images/COLORED_THUMBNAIL.png)
 
 We wanted to compare the inference accuracy of the Color and Zoom Associated Channels method (CaZaCs) vs. standard labeling data (standard zoom level, and no color channels). 
 
 
 ### Labeling Lung Components:
-![Labeling Interface](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/LABELING_GIF.gif)
+![Labeling Interface](images/LABELING_GIF.gif)
 
 
 ### Live Inference Tool:
-![Single Pixel Inference](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/INFERENCE_CLICK_GIF.gif)
+![Single Pixel Inference](images/INFERENCE_CLICK_GIF.gif)
 
 
 ### You can now do multiple pixel selection inference!
-![Multi Selection Inference](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/INFERENCE_DRAG_GIF.gif)
+![Multi Selection Inference](images/INFERENCE_DRAG_GIF.gif)
 
 ## Results
 We successfully developed an automated classification system that:
@@ -55,12 +55,12 @@ We successfully developed an automated classification system that:
 ## Validation Accuracy Results
 ### Results: Training Data Using Color and Zoom Associated Channel Method (CaZaC)
 
-![Results with CaZaC](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/GRAPH_LABELED_PROCESSED.png)
+![Results with CaZaC](images/GRAPH_LABELED_PROCESSED.png)
 
 
 ### Results: Without CaZaC
 
-![Results without CaZaC](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/GRAPH_LABELED_BASIC.png)
+![Results without CaZaC](images/GRAPH_LABELED_BASIC.png)
  
 
 ## Further Directions
@@ -71,10 +71,10 @@ We successfully developed an automated classification system that:
 We added prostate histological images from the Prostate cANcer graDe Assessment (PANDA) Challenge: ```https://www.kaggle.com/c/prostate-cancer-grade-assessment/data```. 
 We wanted to see if CazaC could outperform standard classification methods for diagnosis of prostrate cancer using the Gleason grading system (results are pending).
 
-![Gleason Labeling](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/BASIC_LABELING_GIF.gif)
+![Gleason Labeling](images/BASIC_LABELING_GIF.gif)
 
 You're now able to enable and disable the past label masks!
-![Masks](https://newbai-ai-resources.s3.us-east-2.amazonaws.com/images/MASK_GIF.gif)
+![Masks](images/MASK_GIF.gif)
 
 ## Getting Started
 
